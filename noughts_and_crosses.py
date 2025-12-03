@@ -11,7 +11,7 @@ try:
                 #player 2s turn
                 move = input("P2(O) please input your grid move (x,y):").replace(" ","")
                 try:
-                    y, x = map(int, move.split(','))#y=row, x=col
+                    x, y = map(int, move.split(','))#y=row, x=col
                     y-=1
                     x-=1
                     if -1<x<3 and -1<y<3 and board[y][x] == '.':
@@ -25,7 +25,7 @@ try:
                 #player 1s turn
                 move = input("P1(X) please input your grid move (x,y):").replace(" ","")
                 try:
-                    y, x = map(int, move.split(','))
+                    x, y = map(int, move.split(','))
                     y-=1
                     x-=1
                     if -1<x<3 and -1<y<3 and board[y][x] == '.':
